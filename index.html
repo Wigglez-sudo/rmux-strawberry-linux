@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rmux — Strawberry (PS4 Linux)</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 2rem 1.25rem 4rem; background: #0f1115; color: #d7dce5;
+         font: 15px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  main { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 1.45rem; margin: 0 0 .25rem; color: #fff; }
+  .sub { color: #8b93a3; margin: 0 0 2rem; }
+  h2 { font-size: 1rem; margin: 2.25rem 0 .6rem; color: #9ad0ff; text-transform: lowercase;
+       letter-spacing: .04em; border-bottom: 1px solid #232833; padding-bottom: .35rem; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { display: flex; gap: .75rem; align-items: baseline; padding: .32rem 0;
+       border-bottom: 1px solid #191d25; }
+  li:last-child { border-bottom: 0; }
+  a { color: #7fc4ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .n { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+  .s { color: #6b7383; font-size: 12px; white-space: nowrap; }
+  .note { color: #8b93a3; font-size: 13px; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #232833; color: #6b7383; font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>rmux — Strawberry (PS4 Linux kernel)</h1>
+  <p class="sub">Armandas Kvietkus (rmux / Dievas) · GPL-2.0 · PS4 kernel work, mirrored after his GitHub account was deleted in November 2026</p>
+
+  <h2>kernel builds</h2>
+  <ul>
+    <li><span class="n"><a href="releases/7.3.3/bzImage-7.3.3-General">bzImage 7.3.3 — General</a></span><span class="s">17 MB</span></li>
+    <li><span class="n"><a href="releases/7.3.3/bzImage-7.3.3-Server">bzImage 7.3.3 — Server</a></span><span class="s">17 MB</span></li>
+    <li><span class="n"><a href="releases/7.3.3/bzImage-7.3.3-SlopMax">bzImage 7.3.3 — SlopMax</a></span><span class="s">17 MB</span></li>
+    <li><span class="n"><a href="releases/7.3.3/bzImage-7.3.3-Slopium">bzImage 7.3.3 — Slopium</a></span><span class="s">17 MB</span></li>
+    <li><span class="n"><a href="releases/7.1.7/7.1.7-Strawberry-General-FullLTO.zip">7.1.7 Strawberry — General (FullLTO)</a></span><span class="s">23 MB</span></li>
+    <li><span class="n"><a href="releases/7.1.7/7.1.7-Strawberry-Server-FullLTO.zip">7.1.7 Strawberry — Server (FullLTO)</a></span><span class="s">23 MB</span></li>
+    <li><span class="n"><a href="releases/7.1.7/7.1.7-Strawberry-SlopMax-FullLTO.zip">7.1.7 Strawberry — SlopMax (FullLTO)</a></span><span class="s">23 MB</span></li>
+    <li><span class="n"><a href="releases/7.1.7/7.1.7-Strawberry-Slopium-FullLTO.zip">7.1.7 Strawberry — Slopium (FullLTO)</a></span><span class="s">23 MB</span></li>
+  </ul>
+
+  <h2>patch stacks</h2>
+  <ul>
+    <li><span class="n"><a href="patches/kernel-7.1.7/">7.1.7 — 171 patches + quilt series</a></span><span class="s">patches</span></li>
+    <li><span class="n"><a href="patches/kernel-7.0.8-baikal/">7.0.8-baikal — 125 patches + quilt series</a></span><span class="s">patches</span></li>
+    <li><span class="n"><a href="kernel-config/">kernel configs — 7.0.8-baikal, 7.1.7-zaebiz</a></span><span class="s">config</span></li>
+    <li><span class="n"><a href="build.sh.aeolia-belize_7.0.8-Stable">build.sh — Aeolia/Belize</a></span><span class="s">builder</span></li>
+    <li><span class="n"><a href="build.sh.baikal_7.0.8-Stable">build.sh — Baikal</a></span><span class="s">builder</span></li>
+  </ul>
+
+  <h2>docs written by him</h2>
+  <ul>
+    <li><span class="n"><a href="README.md">README — Strawberry</a></span><span class="s">md</span></li>
+    <li><span class="n"><a href="BRANCHES.md">BRANCHES — branch list</a></span><span class="s">md</span></li>
+  </ul>
+
+  <h2>live sources</h2>
+  <ul>
+    <li><span class="n"><a href="https://gitlab.com/rmuxnet/linux">gitlab.com/rmuxnet/linux</a></span><span class="s">kernel, branch ps4/7.3.4</span></li>
+    <li><span class="n"><a href="https://github.com/HackSucks/caramel">HackSucks/caramel</a></span><span class="s">built on Strawberry</span></li>
+    <li><span class="n"><a href="https://github.com/vnkgdshrr/linux-rmuxnet">vnkgdshrr/linux-rmuxnet</a></span><span class="s">snapshot of his kernel repo</span></li>
+    <li><span class="n"><a href="https://github.com/meerzulee/linux-psx">meerzulee/linux-psx</a></span><span class="s">his patches with provenance</span></li>
+    <li><span class="n"><a href="https://github.com/feeRnt/ps4-linux-12xx">feeRnt/ps4-linux-12xx</a></span><span class="s">branches carrying his commits</span></li>
+  </ul>
+
+  <p class="note">His PS5 Linux work is kept in a separate repository. Everything here is his,
+  unmodified; kernel-derived material is GPL-2.0 — see <a href="COPYING">COPYING</a>.</p>
+
+  <footer>
+    If you are rmux and want this changed or removed, open an issue on the repository.
+  </footer>
+</main>
+</body>
+</html>
